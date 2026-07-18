@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Emmanuella Nanret Jatau</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav wrap">
+    <a class="brand" href="index.html">EN JATAU <span class="tag">// SEC</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="padding:60px 0 50px;">
+  <img class="contour-field" src="assets/topo-bg.svg" alt="" aria-hidden="true">
+  <div class="wrap reveal in">
+    <p class="gridref">CONTACT</p>
+    <h1 style="max-width:22ch;">Let's connect</h1>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contact-grid">
+
+    <div class="reveal">
+      <div id="formStatus" class="form-status" role="status"></div>
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="cName">Name</label>
+          <input type="text" id="cName" name="name" autocomplete="name">
+          <span class="error-msg" id="errName"></span>
+        </div>
+        <div class="field">
+          <label for="cEmail">Email Address</label>
+          <input type="text" id="cEmail" name="email" autocomplete="email">
+          <span class="error-msg" id="errEmail"></span>
+        </div>
+        <div class="field">
+          <label for="cPhone">Phone Number</label>
+          <input type="text" id="cPhone" name="phone" autocomplete="tel" placeholder="Digits only">
+          <span class="error-msg" id="errPhone"></span>
+        </div>
+        <div class="field">
+          <label for="cMessage">Message</label>
+          <textarea id="cMessage" name="message"></textarea>
+          <span class="error-msg" id="errMessage"></span>
+        </div>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+    </div>
+
+    <div class="contact-info reveal">
+      <p class="gridref" style="margin-bottom:20px;">DIRECT</p>
+      <div class="item">
+        <span class="label">Email</span>
+        <a href="mailto:e.jatau1087@miva.edu.ng">e.jatau1087@miva.edu.ng</a>
+      </div>
+      <div class="item">
+        <span class="label">Phone</span>
+        <address>+234 705 873 0133</address>
+      </div>
+      <div class="item">
+        <span class="label">Location</span>
+        <address>Jos, Plateau State, Nigeria</address>
+      </div>
+      <div class="item">
+        <span class="label">GitHub</span>
+        <a href="https://github.com/ejatau1087-byte" target="_blank" rel="noopener">github.com/ejatau1087-byte</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap foot-row">
+    <span>&copy; 2026 Emmanuella Nanret Jatau</span>
+    <span>
+      <a href="https://github.com/ejatau1087-byte" target="_blank" rel="noopener">GitHub</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:e.jatau1087@miva.edu.ng">e.jatau1087@miva.edu.ng</a>
+    </span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
+
