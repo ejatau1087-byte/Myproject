@@ -360,6 +360,15 @@ table.skills th {
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 .project-card:hover { border-color: var(--amber); transform: translateY(-3px); }
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 32px;
+}
+@media (max-width: 760px) {
+  .video-grid { grid-template-columns: 1fr; }
+}
 .project-card img { border-bottom: 1px solid var(--line); }
 .project-body { padding: 20px; }
 .project-body h3 { font-size: 1.05rem; }
@@ -686,16 +695,37 @@ address { font-style: normal; }
   <div class="wrap">
     <div class="section-head reveal">
       <h2>A short walkthrough</h2>
+      <p>Two clips that go with the rest of this page — one walks through how my GIS background carried over into cybersecurity, the other is a quick 60-second highlight for anyone skimming.</p>
     </div>
-    <div class="reveal" style="max-width:360px;">
-      <iframe
-        style="width:100%; aspect-ratio:9/16; border-radius:6px; border:1px solid var(--line);"
-        src="https://www.youtube.com/embed/fGwrNwLcQBA"
-        title="Intro video"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+    <div class="video-grid">
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <iframe
+          style="width:100%; aspect-ratio:16/9; display:block; border:none;"
+          src="https://www.youtube.com/embed/eGHOHdt6VlQ"
+          title="Intro video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <div style="padding:18px 20px;">
+          <h3>From terrain maps to threat maps</h3>
+          <p>A longer walkthrough of my path from GIS into cybersecurity — what carried over, what didn't, and why I think the two fields have more in common than people expect.</p>
+        </div>
+      </div>
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <iframe
+          style="width:100%; aspect-ratio:9/16; display:block; border:none;"
+          src="https://www.youtube.com/embed/fGwrNwLcQBA"
+          title="Quick highlight"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <div style="padding:18px 20px;">
+          <h3>60-second highlight</h3>
+          <p>The short version — a quick highlight reel if you're in a hurry and just want the headline.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
