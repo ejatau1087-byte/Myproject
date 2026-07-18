@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Planner — Emmanuella Nanret Jatau</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav wrap">
+    <a class="brand" href="index.html">EN JATAU <span class="tag">// SEC</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="padding:60px 0 50px;">
+  <img class="contour-field" src="assets/topo-bg.svg" alt="" aria-hidden="true">
+  <div class="wrap reveal in">
+    <p class="gridref">ACADEMIC PLANNER</p>
+    <h1 style="max-width:22ch;">Keep the coursework on the map</h1>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="planner-shell reveal">
+
+      <form class="planner-form" id="taskForm">
+        <input type="text" id="taskInput" placeholder="Add a task — e.g. Read Module 4" required aria-label="Task description">
+        <input type="date" id="taskDue" aria-label="Due date (optional)">
+        <button type="submit" class="btn primary">Add Task</button>
+      </form>
+
+      <div class="planner-stats">
+        <span>Total: <strong id="countTotal">0</strong></span>
+        <span>Completed: <strong id="countDone">0</strong></span>
+        <span>Open: <strong id="countOpen">0</strong></span>
+      </div>
+
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="active" type="button">Active</button>
+        <button class="filter-btn" data-filter="completed" type="button">Completed</button>
+      </div>
+
+      <ul class="task-list" id="taskList"></ul>
+      <p class="empty-state" id="emptyState">No tasks here yet — add one above.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap foot-row">
+    <span>&copy; 2026 Emmanuella Nanret Jatau</span>
+    <span>
+      <a href="https://github.com/ejatau1087-byte" target="_blank" rel="noopener">GitHub</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:e.jatau1087@miva.edu.ng">e.jatau1087@miva.edu.ng</a>
+    </span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/planner.js"></script>
+</body>
+</html>
+
