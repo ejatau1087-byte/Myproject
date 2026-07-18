@@ -252,6 +252,12 @@ header.site {
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--panel);
+  aspect-ratio: 4 / 5;
+}
+.hero-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* coordinate ticker */
@@ -599,7 +605,6 @@ address { font-style: normal; }
   <img class="contour-field" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDUwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iNTAwIj4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiMyMDM0M0UiIHN0cm9rZS13aWR0aD0iMS4yIj4KICAgIDxwYXRoIGQ9Ik0tNTAgNDYwIEMgMTUwIDM4MCwgMzAwIDQ3MCwgNDgwIDQwMCBTIDgwMCAzMzAsIDEyNTAgNDIwIi8+CiAgICA8cGF0aCBkPSJNLTUwIDQxMCBDIDE1MCAzMzAsIDMwMCA0MjAsIDQ4MCAzNTAgUyA4MDAgMjgwLCAxMjUwIDM3MCIvPgogICAgPHBhdGggZD0iTS01MCAzNjAgQyAxNTAgMjgwLCAzMDAgMzcwLCA0ODAgMzAwIFMgODAwIDIzMCwgMTI1MCAzMjAiLz4KICAgIDxwYXRoIGQ9Ik0tNTAgMzEwIEMgMTUwIDIzMCwgMzAwIDMyMCwgNDgwIDI1MCBTIDgwMCAxODAsIDEyNTAgMjcwIi8+CiAgICA8cGF0aCBkPSJNLTUwIDI2MCBDIDE1MCAxODAsIDMwMCAyNzAsIDQ4MCAyMDAgUyA4MDAgMTMwLCAxMjUwIDIyMCIvPgogICAgPHBhdGggZD0iTS01MCAyMTAgQyAxNTAgMTMwLCAzMDAgMjIwLCA0ODAgMTUwIFMgODAwIDgwLCAxMjUwIDE3MCIvPgogICAgPHBhdGggZD0iTS01MCAxNjAgQyAxNTAgODAsIDMwMCAxNzAsIDQ4MCAxMDAgUyA4MDAgMzAsIDEyNTAgMTIwIi8+CiAgPC9nPgo8L3N2Zz4K" alt="" aria-hidden="true">
   <div class="wrap hero-grid">
     <div class="reveal in">
-      <p class="gridref eyebrow">JOS, PLATEAU STATE · 09.8965°N 8.8583°E</p>
       <h1>Hello! I map <em>terrain</em> and I map <em>threats</em>.</h1>
       <p class="lede">Welcome to my portfolio as a cybersecurity student. This site showcases the projects, practical labs and learning journey behind my move from Geographic Information Systems into digital security — where reading a landscape and reading a network turn out to need the same instincts.</p>
       <div class="btn-row">
@@ -608,7 +613,7 @@ address { font-style: normal; }
       </div>
     </div>
     <div class="hero-portrait reveal">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnR3JhZCIgY3g9IjUwJSIgY3k9IjQyJSIgcj0iNzAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFCMkMzNiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwRjFCMjQiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InJpbmdHcmFkIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNFQzdCMyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNFOEEzM0QiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI2JnR3JhZCkiLz4KICA8IS0tIGNvbnRvdXIgcmluZ3MgLS0+CiAgPGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjY0MDRCIiBzdHJva2Utd2lkdGg9IjEuNSI+CiAgICA8ZWxsaXBzZSBjeD0iMjAwIiBjeT0iMjMwIiByeD0iMTUwIiByeT0iMTEwIi8+CiAgICA8ZWxsaXBzZSBjeD0iMjAwIiBjeT0iMjMwIiByeD0iMTE1IiByeT0iODIiLz4KICAgIDxlbGxpcHNlIGN4PSIyMDAiIGN5PSIyMzAiIHJ4PSI4MCIgcnk9IjU2Ii8+CiAgPC9nPgogIDwhLS0gY3Jvc3NoYWlyIC0tPgogIDxnIHN0cm9rZT0idXJsKCNyaW5nR3JhZCkiIHN0cm9rZS13aWR0aD0iMiI+CiAgICA8bGluZSB4MT0iMjAwIiB5MT0iNDAiIHgyPSIyMDAiIHkyPSI5MCIvPgogICAgPGxpbmUgeDE9IjIwMCIgeTE9IjM3MCIgeDI9IjIwMCIgeTI9IjMyMCIvPgogICAgPGxpbmUgeDE9IjMwIiB5MT0iMjAwIiB4Mj0iODAiIHkyPSIyMDAiLz4KICAgIDxsaW5lIHgxPSIzNzAiIHkxPSIyMDAiIHgyPSIzMjAiIHkyPSIyMDAiLz4KICA8L2c+CiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMjAwIiByPSIxMTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNyaW5nR3JhZCkiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjIwMCIgcj0iNCIgZmlsbD0iI0U4QTMzRCIvPgogIDwhLS0gbW9ub2dyYW0gLS0+CiAgPHRleHQgeD0iMjAwIiB5PSIyMjgiIGZvbnQtZmFtaWx5PSInU3BhY2UgR3JvdGVzaycsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEyIiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjRURFRkVGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5FSjwvdGV4dD4KICA8dGV4dCB4PSIyMDAiIHk9IjM2OCIgZm9udC1mYW1pbHk9IidKZXRCcmFpbnMgTW9ubycsIG1vbm9zcGFjZSIgZm9udC1zaXplPSIxMyIgbGV0dGVyLXNwYWNpbmc9IjMiIGZpbGw9IiM3QzhCOTMiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjA5Ljg5NjXCsE4gIDguODU4M8KwRTwvdGV4dD4KPC9zdmc+Cg==" alt="Monogram avatar for Emmanuella Nanret Jatau">
+      <img src="assets/Profile.jpg" alt="Photograph of Emmanuella Nanret Jatau">
     </div>
   </div>
 </section>
@@ -622,7 +627,6 @@ address { font-style: normal; }
 <section>
   <div class="wrap">
     <div class="section-head reveal">
-      <p class="gridref">01 — BIOGRAPHY</p>
       <h2>A little about me</h2>
     </div>
     <div class="reveal" style="max-width:70ch;">
@@ -634,7 +638,6 @@ address { font-style: normal; }
 <section>
   <div class="wrap">
     <div class="section-head reveal">
-      <p class="gridref">02 — WHAT I FOCUS ON</p>
       <h2>Where GIS meets security</h2>
     </div>
     <div class="card-grid">
