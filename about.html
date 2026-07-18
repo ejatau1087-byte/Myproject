@@ -251,6 +251,12 @@ header.site {
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--panel);
+  aspect-ratio: 4 / 5;
+}
+.hero-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* coordinate ticker */
@@ -597,7 +603,6 @@ address { font-style: normal; }
 <section class="hero" style="padding:60px 0 50px;">
   <img class="contour-field" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDUwMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iNTAwIj4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiMyMDM0M0UiIHN0cm9rZS13aWR0aD0iMS4yIj4KICAgIDxwYXRoIGQ9Ik0tNTAgNDYwIEMgMTUwIDM4MCwgMzAwIDQ3MCwgNDgwIDQwMCBTIDgwMCAzMzAsIDEyNTAgNDIwIi8+CiAgICA8cGF0aCBkPSJNLTUwIDQxMCBDIDE1MCAzMzAsIDMwMCA0MjAsIDQ4MCAzNTAgUyA4MDAgMjgwLCAxMjUwIDM3MCIvPgogICAgPHBhdGggZD0iTS01MCAzNjAgQyAxNTAgMjgwLCAzMDAgMzcwLCA0ODAgMzAwIFMgODAwIDIzMCwgMTI1MCAzMjAiLz4KICAgIDxwYXRoIGQ9Ik0tNTAgMzEwIEMgMTUwIDIzMCwgMzAwIDMyMCwgNDgwIDI1MCBTIDgwMCAxODAsIDEyNTAgMjcwIi8+CiAgICA8cGF0aCBkPSJNLTUwIDI2MCBDIDE1MCAxODAsIDMwMCAyNzAsIDQ4MCAyMDAgUyA4MDAgMTMwLCAxMjUwIDIyMCIvPgogICAgPHBhdGggZD0iTS01MCAyMTAgQyAxNTAgMTMwLCAzMDAgMjIwLCA0ODAgMTUwIFMgODAwIDgwLCAxMjUwIDE3MCIvPgogICAgPHBhdGggZD0iTS01MCAxNjAgQyAxNTAgODAsIDMwMCAxNzAsIDQ4MCAxMDAgUyA4MDAgMzAsIDEyNTAgMTIwIi8+CiAgPC9nPgo8L3N2Zz4K" alt="" aria-hidden="true">
   <div class="wrap reveal in">
-    <p class="gridref">ABOUT</p>
     <h1 style="max-width:20ch;">Educational background &amp; career direction</h1>
   </div>
 </section>
@@ -605,7 +610,6 @@ address { font-style: normal; }
 <section>
   <div class="wrap about-grid">
     <div class="reveal">
-      <p class="gridref" style="margin-bottom:16px;">EDUCATION</p>
       <div class="timeline">
         <div class="item">
           <time>Secondary School</time>
@@ -623,10 +627,8 @@ address { font-style: normal; }
     </div>
 
     <div class="reveal">
-      <p class="gridref" style="margin-bottom:16px;">CAREER ASPIRATIONS</p>
       <p>My goal is to work as a GIS and Cybersecurity Specialist — combining spatial data analysis with security operations, from mapping exposure across physical and digital infrastructure to responding when something goes wrong.</p>
 
-      <p class="gridref" style="margin:28px 0 16px;">HOBBIES &amp; INTERESTS</p>
       <ul class="hobby-list">
         <li>Travel &amp; adventure</li>
         <li>Catering</li>
@@ -641,7 +643,6 @@ address { font-style: normal; }
 <section>
   <div class="wrap">
     <div class="section-head reveal">
-      <p class="gridref">TECHNICAL SKILLS</p>
       <h2>Tools &amp; competencies</h2>
     </div>
     <div class="reveal">
@@ -684,15 +685,17 @@ address { font-style: normal; }
 <section>
   <div class="wrap">
     <div class="section-head reveal">
-      <p class="gridref">INTRO REEL</p>
       <h2>A short walkthrough</h2>
     </div>
-    <div class="reveal" style="max-width:760px;">
-      <video controls style="width:100%; border-radius:6px; border:1px solid var(--line);" poster="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzQwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM0MCI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzNDAiIGZpbGw9IiMxNjIzMkQiLz4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiMyNjQwNEIiIHN0cm9rZS13aWR0aD0iMS40Ij4KICAgIDxwYXRoIGQ9Ik0tMjAgMzAwIEMgMTIwIDI1MCwgMTgwIDMyMCwgMzIwIDI2MCBTIDUyMCAyMjAsIDY0MCAyODAiLz4KICAgIDxwYXRoIGQ9Ik0tMjAgMjUwIEMgMTIwIDIwMCwgMTgwIDI3MCwgMzIwIDIxMCBTIDUyMCAxNzAsIDY0MCAyMzAiLz4KICAgIDxwYXRoIGQ9Ik0tMjAgMjAwIEMgMTIwIDE1MCwgMTgwIDIyMCwgMzIwIDE2MCBTIDUyMCAxMjAsIDY0MCAxODAiLz4KICAgIDxwYXRoIGQ9Ik0tMjAgMTUwIEMgMTIwIDEwMCwgMTgwIDE3MCwgMzIwIDExMCBTIDUyMCA3MCwgNjQwIDEzMCIvPgogIDwvZz4KICA8ZyBmaWxsPSIjRThBMzNEIj4KICAgIDxjaXJjbGUgY3g9IjE4MCIgY3k9IjE5MCIgcj0iNyIvPgogICAgPGNpcmNsZSBjeD0iMzYwIiBjeT0iMTQwIiByPSI3Ii8+CiAgICA8Y2lyY2xlIGN4PSI0NzAiIGN5PSIyMDUiIHI9IjciLz4KICA8L2c+CiAgPGcgZmlsbD0iIzNFQzdCMyIgZm9udC1mYW1pbHk9IidKZXRCcmFpbnMgTW9ubycsIG1vbm9zcGFjZSIgZm9udC1zaXplPSIxMSI+CiAgICA8dGV4dCB4PSIxOTIiIHk9IjE4NSI+UklTSzogSElHSDwvdGV4dD4KICAgIDx0ZXh0IHg9IjM3MiIgeT0iMTM1Ij5SSVNLOiBNRUQ8L3RleHQ+CiAgICA8dGV4dCB4PSI0ODIiIHk9IjIwMCI+UklTSzogTE9XPC90ZXh0PgogIDwvZz4KICA8dGV4dCB4PSIzMCIgeT0iMzE1IiBmb250LWZhbWlseT0iJ0pldEJyYWlucyBNb25vJywgbW9ub3NwYWNlIiBmb250LXNpemU9IjEzIiBmaWxsPSIjN0M4QjkzIj5MQVlFUjogRVhQT1NVUkVfU1VSRkFDRS5nZW9qc29uPC90ZXh0Pgo8L3N2Zz4K">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <p class="gridref" style="margin-top:10px;">Placeholder clip — swap the &lt;source&gt; in about.html for your own intro footage.</p>
+    <div class="reveal" style="max-width:360px;">
+      <iframe
+        style="width:100%; aspect-ratio:9/16; border-radius:6px; border:1px solid var(--line);"
+        src="https://www.youtube.com/embed/fGwrNwLcQBA"
+        title="Intro video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
     </div>
   </div>
 </section>
@@ -752,43 +755,3 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 </body>
 </html>
-            <td><div class="bar-bg"><div class="bar-fill" style="width:65%;"></div></div></td>
-            <td style="font-family:'JetBrains Mono',monospace;">65%</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="gridref">INTRO REEL</p>
-      <h2>A short walkthrough</h2>
-    </div>
-    <div class="reveal" style="max-width:760px;">
-      <video controls style="width:100%; border-radius:6px; border:1px solid var(--line);" poster="assets/project-gis.svg">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <p class="gridref" style="margin-top:10px;">Placeholder clip — swap the &lt;source&gt; in about.html for your own intro footage.</p>
-    </div>
-  </div>
-</section>
-
-<footer class="site">
-  <div class="wrap foot-row">
-    <span>&copy; 2026 Emmanuella Nanret Jatau</span>
-    <span>
-      <a href="https://github.com/ejatau1087-byte" target="_blank" rel="noopener">GitHub</a>
-      &nbsp;·&nbsp;
-      <a href="mailto:e.jatau1087@miva.edu.ng">e.jatau1087@miva.edu.ng</a>
-    </span>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
-</html>
-
